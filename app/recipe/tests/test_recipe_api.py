@@ -408,7 +408,7 @@ class PrivateRecipeApiTests(TestCase):
         r1 = create_recipe(user=self.user, title="Feijoada")
         r2 = create_recipe(user=self.user, title="Talharim Alfredo")
         ingredient1 = Ingredient.objects.create(user=self.user, name="Feijão")
-        ingredient2 = Ingredient.objects.create(user=self.user, name="Macarrão")
+        ingredient2 = Ingredient.objects.create(user=self.user, name="Queijo")
         r1.ingredients.add(ingredient1)
         r2.ingredients.add(ingredient2)
         r3 = create_recipe(user=self.user, title="Bisteca de Porco")
